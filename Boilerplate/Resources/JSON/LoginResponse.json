@@ -1,0 +1,25 @@
+{
+    "status": true,
+    "statusCode": 1,
+    "message": "success",
+    "data": {
+        "id": "6502e365cd28570f36bb367b",
+        "email": "aqi101@yopmail.com",
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTAyZTM2NWNkMjg1NzBmMzZiYjM2N2IiLCJyb2xlIjoiVVNFUiIsIm5iZiI6MTY5NDY4ODEwMywiZXhwIjoxNjk1MjkyOTAzLCJpYXQiOjE2OTQ2ODgxMDMsImlzcyI6ImRldiJ9.242ujOm28RHbkrKgaRS0ad2deQslgmVYYs1ZxcdEKFk",
+        "refreshToken": "THRJEQaSEdmbEhRD5NPsbL+iv8M27M+NWeji4b0G67s1WH9KeEueCFqI7eUuxBhKsHKYbOqC09lcz/lUU2P4pQ==",
+        "name": "Faizan Mahmood",
+        "phoneCode": "+92",
+        "phoneNumber": "3552626727262",
+        "dateOfBirth": 219372989328324,
+        "nationality": "pk",
+        "otpRequired": true,
+        "loyaltyId": "2000000004240035",
+        "pointBalance": 0,
+        "totalPointsEarned": 0,
+        "totalPointsRedeemed": 0,
+        "profileImage": null,
+        "isVerified": false,
+        "isSubscribed": false,
+        "userLocale": "en"
+    }
+}

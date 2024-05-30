@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmptyDataView" customModule="Boilerplate" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="KT5-4d-cYL" id="tac-R2-wP0"/>
+                <outlet property="lblDescription" destination="9ky-qT-MX3" id="uj6-m4-ieH"/>
+                <outlet property="lblTitle" destination="5Vv-Jd-Tu5" id="5vt-l7-hEl"/>
+                <outlet property="verticalCenterConstraint" destination="omA-7p-gI4" id="q2A-dX-WqB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8MP-qX-1FK">
+                    <rect key="frame" x="50" y="372" width="314" height="152"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_data_found" translatesAutoresizingMaskIntoConstraints="NO" id="KT5-4d-cYL">
+                            <rect key="frame" x="114.5" y="0.0" width="85" height="85"/>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="20R-Br-Kig">
+                            <rect key="frame" x="26" y="95" width="262" height="57"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Data Found!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Vv-Jd-Tu5">
+                                    <rect key="frame" x="0.0" y="0.0" width="262" height="30"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                    <color key="textColor" red="0.25098039220000001" green="0.62352941179999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When you have data, you will see it here." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ky-qT-MX3">
+                                    <rect key="frame" x="0.0" y="40" width="262" height="17"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="8MP-qX-1FK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5WD-TA-1GV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8MP-qX-1FK" secondAttribute="trailing" constant="50" id="Kzr-xt-exy"/>
+                <constraint firstItem="8MP-qX-1FK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="50" id="bCe-9C-53j"/>
+                <constraint firstItem="8MP-qX-1FK" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="omA-7p-gI4"/>
+            </constraints>
+            <point key="canvasLocation" x="0.0" y="89"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="no_data_found" width="85.333335876464844" height="85.333335876464844"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
